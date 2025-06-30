@@ -119,6 +119,7 @@ footer{
     display: flex;
     flex-direction: column;
     gap: 24px;
+    width: 186px;
 }
 
 .footer-links-list a, .footer-links h3{
