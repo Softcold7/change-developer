@@ -28,7 +28,10 @@ body {
     background-color: var(--light-color);
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: 'New Rocker', serif;
     font-weight: 700;
 }
@@ -564,19 +567,19 @@ ul {
     .section-title {
         font-size: 2rem;
     }
-    
+
     .hero__title {
         font-size: 2.8rem;
     }
-    
+
     .hero__subtitle {
         font-size: 1.3rem;
     }
-    
+
     .about__inner {
         grid-template-columns: 1fr;
     }
-    
+
     .about__image {
         order: -1;
     }
@@ -596,46 +599,46 @@ ul {
         flex-direction: column;
         padding: 30px;
     }
-    
+
     .nav.active {
         left: 0;
     }
-    
+
     .nav__list {
         flex-direction: column;
         gap: 20px;
     }
-    
+
     .menu-toggle {
         display: block;
     }
-    
+
     .menu-toggle.active .menu-toggle__line:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);
     }
-    
+
     .menu-toggle.active .menu-toggle__line:nth-child(2) {
         opacity: 0;
     }
-    
+
     .menu-toggle.active .menu-toggle__line:nth-child(3) {
         transform: rotate(-45deg) translate(7px, -6px);
     }
-    
+
     .hero {
         height: auto;
         padding: 120px 0 80px;
     }
-    
+
     .hero__buttons {
         flex-direction: column;
         gap: 15px;
     }
-    
+
     .contacts__inner {
         grid-template-columns: 1fr;
     }
-    
+
     .contacts__map {
         height: 300px;
     }
@@ -645,16 +648,54 @@ ul {
     .section-title {
         font-size: 1.8rem;
     }
-    
+
     .hero__title {
         font-size: 2.2rem;
     }
-    
+
     .hero__subtitle {
         font-size: 1.1rem;
     }
-    
+
     .menu__tabs {
         flex-direction: column;
     }
 }
+
+
+
+
+
+.gallery {
+    width: 100%;
+    height: 800px;
+    display: grid;
+    grid-template-columns: 9fr 1fr;
+    gap: 20px;
+}
+
+.gallery>img {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 800px;
+}
+
+.images img {
+    filter: grayscale(1);
+    transition: 0.5s;
+    cursor: pointer;
+    height: calc(100% / 7);
+}
+
+.images img:hover {
+    filter: grayscale(0);
+}
+
+
